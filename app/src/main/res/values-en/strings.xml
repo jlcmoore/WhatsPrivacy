@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WhatsPrivacy</string>
+    <string name="action_exit_questionnaire_no_save">Exit</string>
+    <string name="action_exit_questionnaire_save">Exit and Save</string>
+    <string name="action_sync">Sync</string>
+    <string name="tab1">PROFILE</string>
+    <string name="tab2">QUESTIONS</string>
+</resources>

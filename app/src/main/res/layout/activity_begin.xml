@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:weightSum="2"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.25"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/textview_border"
+                    android:inputType="textPersonName"
+                    android:hint="Enter your name..."
+                    android:paddingTop="6dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="6dp"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical"/>
+
+                <!-- TODO: better edit icon? -->
+                <!--
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Edit image icon"
+                    android:clickable="true"
+                    android:padding="4dp"
+                    android:layout_margin="8dp"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/edit_states"
+                    android:src="@drawable/ic_action_edit"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"/>
+                    -->
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="For each of the following categories, what is the name of the WhatsApp group you associate with it?"/>
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Immediate family"/>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.25"
+                        android:orientation="vertical">
+                        <EditText
+                            android:id="@+id/groupNameOne"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/textview_border"
+                            android:inputType="textPersonName"
+                            android:hint="Enter group name one..."
+                            android:paddingTop="6dp"
+                            android:paddingBottom="8dp"
+                            android:paddingLeft="6dp"
+                            android:textSize="18sp"
+                            android:gravity="center_vertical"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Close friends"/>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.25"
+                        android:orientation="vertical">
+                        <EditText
+                            android:id="@+id/groupNameTwo"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/textview_border"
+                            android:inputType="textPersonName"
+                            android:hint="Enter group name two..."
+                            android:paddingTop="6dp"
+                            android:paddingBottom="8dp"
+                            android:paddingLeft="6dp"
+                            android:textSize="18sp"
+                            android:gravity="center_vertical"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Acquaintances"/>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.25"
+                        android:orientation="vertical">
+                        <EditText
+                            android:id="@+id/groupNameThree"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/textview_border"
+                            android:inputType="textPersonName"
+                            android:hint="Enter group name three..."
+                            android:paddingTop="6dp"
+                            android:paddingBottom="8dp"
+                            android:paddingLeft="6dp"
+                            android:textSize="18sp"
+                            android:gravity="center_vertical"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Everyone"/>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.25"
+                        android:orientation="vertical">
+                        <EditText
+                            android:id="@+id/groupNameFour"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/textview_border"
+                            android:inputType="textPersonName"
+                            android:hint="Enter group name four..."
+                            android:paddingTop="6dp"
+                            android:paddingBottom="8dp"
+                            android:paddingLeft="6dp"
+                            android:textSize="18sp"
+                            android:gravity="center_vertical"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/submitContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@android:color/transparent"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/buttonSubmit"
+                    android:onClick="submitProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/input_circle_normal"
+                    android:src="@drawable/ic_forward" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

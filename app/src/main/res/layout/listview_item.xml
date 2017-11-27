@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- TODO: layout takes up too much width -->
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/textview_border"
+    android:layout_marginTop="@dimen/activity_vertical_margin">
+
+    <ImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/ic_contact"
+        android:background="@drawable/input_circle_normal"
+        android:contentDescription="@string/profilePicture"/>
+
+    <TextView
+        android:id="@+id/groupName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical ="true"
+        android:layout_toRightOf="@+id/profile_pic"
+        android:layout_toEndOf="@+id/profile_pic"
+        android:text="@string/fillerGroupName"
+        android:paddingLeft="10sp"
+        android:textSize="25sp" />
+
+    <!-- TODO: Checkbox is not visible -->
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical ="true"
+        android:layout_marginRight="44dp"
+        android:layout_marginEnd="44dp"
+        android:focusable="false" />
+
+</RelativeLayout>

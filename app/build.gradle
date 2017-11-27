@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.0"
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
     defaultConfig {
-        applicationId "droidmentor.tabwithviewpager"
+        applicationId "jlcmoore.whatsprivacy"
         minSdkVersion 15
-        targetSdkVersion 25
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -25,8 +25,11 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
 
-    compile 'com.android.support:appcompat-v7:25.0.0'
-    compile 'com.android.support:design:25.0.0'
-
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:design:26.1.0'
+    compile 'android.arch.persistence.room:runtime:1.0.0'
+    // https://mvnrepository.com/artifact/net.sf.opencsv/opencsv
+    compile group: 'net.sf.opencsv', name: 'opencsv', version: '2.3'
+    annotationProcessor 'android.arch.persistence.room:compiler:1.0.0'
     testCompile 'junit:junit:4.12'
 }
