@@ -21,5 +21,8 @@
     <string name="fillerQuestionName">Question Identifier</string>
     <string name="sample_question">This is a sample question!</string>
     <string name="sample_question_long">All work and no play makes Jack a very dull boy. All work and no play makes Jack a very dull boy. All work and no play makes Jack a very dull boy. All work and no play makes Jack a very dull boy. All work and no play makes Jack a very dull boy. All work and no play makes Jack a very dull boy.</string>
+    <string name="fillerDomainName">Generic Domain Name</string>
+    <string name="fillerScenarioName">This is a generic scenario text</string>
+    <string name="fillerQuestionResponse">Family, Friends</string>
 
 </resources>
